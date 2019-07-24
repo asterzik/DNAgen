@@ -1,0 +1,22 @@
+#!/bin/bash
+
+model=original
+description=s.cerevisiae
+chr=$description.fa
+
+# prints gc and cpg and motif_match content to file
+python3 helper_files/Auswertung.py chromosomes/$model/$chr $model $description
+
+# outputs emboss_newcpgreport (cpg islands file)
+python3 external/emboss_newcpgreport.py --email sterzik@thphys.uni-heidelberg.de --sequence chromosomes/$model/$chr
+
+mv emboss_newcpgreport-* results/$model/$description/
+rm results/$model/$description/*.sequence.txt
+
+cd external/nucenergen
+# get nucleosome file
+./applyModel -f ./../../chromosomes/$model/$chr -eps ./position-independent_N2_Scerevisiae_in_vitro.epsilon -out ./../../results/$model/$description/$chr.nuc
+
+cd ../..
+#plot nucleosomes
+python3 helper_files/nucleosomes.py results/$model/$description/$chr.nuc $model $description

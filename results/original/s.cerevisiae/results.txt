@@ -1,0 +1,7 @@
+Ausertung der Sequenz chromosomes/original/s.cerevisiae.fa fuer das Netzwerk original 
+ 
+gc_content: 39.27213966439192 
+CpG observed to expected ration: 0.7986157236092574 
+Hits for CTCF.pfm: 53
+Hits for CTCFL.pfm: 45
+total: 98

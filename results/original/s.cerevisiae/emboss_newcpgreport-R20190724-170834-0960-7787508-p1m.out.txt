@@ -1,0 +1,111 @@
+ID   CHR1  230208 BP.
+XX
+DE   CpG Island report.
+XX
+CC   Obs/Exp ratio > 0.60.
+CC   % C + % G > 50.00.
+CC   Length > 200.
+XX
+FH   Key              Location/Qualifiers
+FT   CpG island       32118..32366
+FT                    /size=249
+FT                    /Sum C+G=124
+FT                    /Percent CG=49.80
+FT                    /ObsExp=1.01
+FT   CpG island       32415..32676
+FT                    /size=262
+FT                    /Sum C+G=136
+FT                    /Percent CG=51.91
+FT                    /ObsExp=0.85
+FT   CpG island       33731..34148
+FT                    /size=418
+FT                    /Sum C+G=215
+FT                    /Percent CG=51.44
+FT                    /ObsExp=0.82
+FT   CpG island       46228..46508
+FT                    /size=281
+FT                    /Sum C+G=142
+FT                    /Percent CG=50.53
+FT                    /ObsExp=0.78
+FT   CpG island       61302..61551
+FT                    /size=250
+FT                    /Sum C+G=129
+FT                    /Percent CG=51.60
+FT                    /ObsExp=1.03
+FT   CpG island       68690..69088
+FT                    /size=399
+FT                    /Sum C+G=212
+FT                    /Percent CG=53.13
+FT                    /ObsExp=1.07
+FT   CpG island       72720..72989
+FT                    /size=270
+FT                    /Sum C+G=134
+FT                    /Percent CG=49.63
+FT                    /ObsExp=0.91
+FT   CpG island       108332..108594
+FT                    /size=263
+FT                    /Sum C+G=129
+FT                    /Percent CG=49.05
+FT                    /ObsExp=1.14
+FT   CpG island       108940..109330
+FT                    /size=391
+FT                    /Sum C+G=194
+FT                    /Percent CG=49.62
+FT                    /ObsExp=1.00
+FT   CpG island       113784..114144
+FT                    /size=361
+FT                    /Sum C+G=197
+FT                    /Percent CG=54.57
+FT                    /ObsExp=0.86
+FT   CpG island       114158..114514
+FT                    /size=357
+FT                    /Sum C+G=200
+FT                    /Percent CG=56.02
+FT                    /ObsExp=0.86
+FT   CpG island       129425..130057
+FT                    /size=633
+FT                    /Sum C+G=324
+FT                    /Percent CG=51.18
+FT                    /ObsExp=0.99
+FT   CpG island       130063..130510
+FT                    /size=448
+FT                    /Sum C+G=249
+FT                    /Percent CG=55.58
+FT                    /ObsExp=0.94
+FT   CpG island       131254..131530
+FT                    /size=277
+FT                    /Sum C+G=136
+FT                    /Percent CG=49.10
+FT                    /ObsExp=0.93
+FT   CpG island       132249..132491
+FT                    /size=243
+FT                    /Sum C+G=117
+FT                    /Percent CG=48.15
+FT                    /ObsExp=1.08
+FT   CpG island       189968..191825
+FT                    /size=1858
+FT                    /Sum C+G=1076
+FT                    /Percent CG=57.91
+FT                    /ObsExp=1.19
+FT   CpG island       191899..192222
+FT                    /size=324
+FT                    /Sum C+G=185
+FT                    /Percent CG=57.10
+FT                    /ObsExp=0.89
+FT   CpG island       192866..193427
+FT                    /size=562
+FT                    /Sum C+G=295
+FT                    /Percent CG=52.49
+FT                    /ObsExp=1.01
+FT   CpG island       221073..221301
+FT                    /size=229
+FT                    /Sum C+G=120
+FT                    /Percent CG=52.40
+FT                    /ObsExp=1.06
+FT   CpG island       222039..222397
+FT                    /size=359
+FT                    /Sum C+G=177
+FT                    /Percent CG=49.30
+FT                    /ObsExp=0.97
+FT   numislands       20
+//
