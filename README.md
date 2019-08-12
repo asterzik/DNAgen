@@ -12,8 +12,12 @@ https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py
 
 I also included a testpipeline for testing the resulting chromosomes on their quality.
 This makes use of several other software:
+
 MOODS: https://github.com/jhkorhonen/MOODS
+
 EMBOSS newcpgreport: http://emboss.sourceforge.net/apps/cvs/emboss/apps/newcpgreport.html
+
 NucEnerGen: http://nucleosome.rutgers.edu/nucenergen/
+
 
 The network training was done with Keras on python 2 and testing on python 3.
