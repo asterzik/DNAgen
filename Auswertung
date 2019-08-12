@@ -1,22 +1,28 @@
 #!/bin/bash
 
-model=original
-description=s.cerevisiae
+model=cnn
+result=results/cnn_result.csv
+description=test
+
+path=chromosomes
 chr=$description.fa
-
-# prints gc and cpg and motif_match content to file
-python3 helper_files/Auswertung.py chromosomes/$model/$chr $model $description
-
+mkdir -p results/$model/$description/
+rm results/$model/$description/emboss*
 # outputs emboss_newcpgreport (cpg islands file)
-python3 external/emboss_newcpgreport.py --email sterzik@thphys.uni-heidelberg.de --sequence chromosomes/$model/$chr
+python3 external/emboss_newcpgreport.py --email sterzik@thphys.uni-heidelberg.de --sequence $path/$model/$chr
 
 mv emboss_newcpgreport-* results/$model/$description/
 rm results/$model/$description/*.sequence.txt
 
 cd external/nucenergen
 # get nucleosome file
-./applyModel -f ./../../chromosomes/$model/$chr -eps ./position-independent_N2_Scerevisiae_in_vitro.epsilon -out ./../../results/$model/$description/$chr.nuc
+./applyModel -f ./../../$path/$model/$chr -eps ./position-independent_N2_Scerevisiae_in_vitro.epsilon -out ./../../results/$model/$description/$chr.nuc
 
 cd ../..
 #plot nucleosomes
-python3 helper_files/nucleosomes.py results/$model/$description/$chr.nuc $model $description
+# prints gc and cpg and motif_match content to file
+python3 helper_files/Auswertung.py $path/$model/$chr $model $description results/$model/$description/$chr.nuc
+touch intermediate.txt
+tail -n2 results/$model/$description/emboss* | head -n1 >> intermediate.txt
+tail -c 4 intermediate.txt >> $result
+rm intermediate.txt

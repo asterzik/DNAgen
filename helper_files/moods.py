@@ -6,8 +6,14 @@ import MOODS.parsers
 import sys
 import time
 import os
+#file_name = 'data/chr1.fa'
+#with open(file_name, "r") as file_handle:
+#    first = file_handle.next().strip()
+#    if first[0] == '>':
+#        first = ''
+#    seq = "".join([first] + [line.strip() for line in file_handle])
 
-def motif_match(seq_array, matrix_path='helper_files/motif_matrix/'):
+def motif_match(seq_array, matrix_path='./helper_files/motif_matrix/'):
     '''Takes sequence as a string and matrix directory path'''
         
     # ---- parameters ----
@@ -59,6 +65,6 @@ def motif_match(seq_array, matrix_path='helper_files/motif_matrix/'):
     total = sum([len(r) for r in results])
     hits = []
     for i, name, m in zip(range(len(results)), matrix_names, results):
-        hits.append('Hits for {}: {}'.format(name, len(m)))
+        hits.append(len(m))
     return hits, total
 

@@ -23,7 +23,7 @@ from helper_files.plot import plot
 fasta_input = 'data/chr01.saccharomyces_cerevisiae-JAN-19-2007.fasta'
 initial_seq = read_fasta_file(fasta_input)
 data = string_to_array(initial_seq)
-data = data[:2200]
+#data = data[:200]
 if len(sys.argv) != 6:
     raise SyntaxError('Usage: python generate.py [name of model] [number of episodes to train] [Saved_model or None] [description] [seq_length]')
 
